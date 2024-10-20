@@ -27,7 +27,7 @@ View Borrowing History  ---  GET  /api/transactions/history/  ---  View current 
 Examples
 
 1.Create user
-    Post  >>  https://kidusom.pythonanywhere.com/api/users/
+    Post  >>  https://hailetafa.pythonanywhere.com/api/users/
     Content type >> application/json
     Body >> 
     {
@@ -40,7 +40,7 @@ Examples
 
 
 2.Get user auth token 
-          Post  >>  https://kidusom.pythonanywhere.com/api/token/
+          Post  >>  https://hailetafa.pythonanywhere.com/api/token/
          Content type >> application/json
        {
         "username": "user4",
@@ -48,19 +48,19 @@ Examples
        }
 
 3.Delete user
-    Delete >> https://kidusom.pythonanywhere.com/api/users/5/
+    Delete >> https://hailetafa.pythonanywhere.com/api/users/5/
     Token >> Authorization,bearer
     Content type >> application/json
 
 
 
 4.List users
-     Get >> https://kidusom.pythonanywhere.com/api/users/
+     Get >> https://hailetafa.pythonanywhere.com/api/users/
      Content type >> application/json
 
 
 5.Create book
-    Post >> https://kidusom.pythonanywhere.com/api/books/
+    Post >> https://hailetafa.pythonanywhere.com/api/books/
     Content type >> application/json
     Body >>
     {
@@ -73,17 +73,17 @@ Examples
 
 
 6.Delete book
-    Delete >> https://kidusom.pythonanywhere.com/api/books/4/
+    Delete >> https://hailetafa.pythonanywhere.com/api/books/4/
     Content type >> application/json
 
 
 7.List books
-      Get >> https://kidusom.pythonanywhere.com/api/books/
+      Get >> https://hailetafa.pythonanywhere.com/api/books/
       Content type >> application/json
 
 
 8.Borrow book
-      Post >> https://kidusom.pythonanywhere.com/api/transactions/check_out/
+      Post >> https://hailetafa.pythonanywhere.com/api/transactions/check_out/
       User2  >> Authorization,bearer
            Content type >> application/json
            Body  >> 
@@ -93,7 +93,7 @@ Examples
 
 
 9.Return book
-     Post >> https://kidusom.pythonanywhere.com/api/transactions/return/
+     Post >> https://hailetafa.pythonanywhere.com/api/transactions/return/
           User2  >> Authorization,bearer
            Content type >> application/json
            Body  >> 
@@ -103,20 +103,20 @@ Examples
 
 
 10.See copies 
-     Get >> https://kidusom.pythonanywhere.com/api/transactions/history/
+     Get >> https://hailetafa.pythonanywhere.com/api/transactions/history/
           User2  >> Authorization,bearer
           Content type >> application/json
 
 
 11.See transaction history 
-     Get >> https://kidusom.pythonanywhere.com/api/books/1/
+     Get >> https://hailetafa.pythonanywhere.com/api/books/1/
          Content type >> application/json   
 
 
 12.Errors 
         Checkout book twice 
        And return book i didn't not borrow 
-           Post >> https://kidusom.pythonanywhere.com/api/transactions/check_out/
+           Post >> https://hailetafa.pythonanywhere.com/api/transactions/check_out/
        User2  >> Authorization,bearer
            Content type >> application/json
            Body  >> 
